@@ -9,13 +9,13 @@ resource "azurerm_kubernetes_cluster" "kubernetescluster" {
         name = "default"
         node_count = 1
         vm_size = "Standard_D2_v2"
-        vnet_subnet_id = azurerm_subnet.subnetaks.id
+       # vnet_subnet_id = azurerm_subnet.subnetaks.id
         enable_auto_scaling = true
         max_count = 2
         min_count = 1
     }
     service_principal {
-    client_id = "hector.rojas@euroamerica.cl"
+    client_id = "miuser"
     client_secret = "miclave"
     }
     network_profile {

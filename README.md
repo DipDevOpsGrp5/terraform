@@ -1,2 +1,6 @@
 # terraform
-Falta xrear main y terraform-tfvars
+Grupo5
+
+# TODO
+Falta completar:
+- terraform-tfvars
